@@ -21,6 +21,14 @@ Install tailwindcss with vite and initialise
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
-
 Install react router dom
 npm install react-router-dom
+
+Install react fiber for 3d animation (fiber is a renderer for three.js)
+npm install @react-three/fiber
+
+Install helpers for react fiber (hepl for cameras, shaders etc..)
+npm install @react-three/drei
+
+Install package to enable animation
+❯ npm install @react-spring/three
