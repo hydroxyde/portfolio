@@ -29,3 +29,6 @@ npm install @react-three/fiber
 
 Install helpers for react fiber (hepl for cameras, shaders etc..)
 npm install @react-three/drei
+
+Install package to enable animation
+❯ npm install @react-spring/three
