@@ -32,3 +32,6 @@ npm install @react-three/drei
 
 Install package to enable animation
 ❯ npm install @react-spring/three
+
+Install email js for form (contact)
+❯ npm install @emailjs/browser
