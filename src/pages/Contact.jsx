@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser'
 import Fox from '../models/Fox'
 import Loader from '../components/Loader'
 import { Canvas } from '@react-three/fiber'
+import useAlert from '../hooks/useAlert'
+import Alert from '../components/Alert'
 
 
 
@@ -12,6 +14,9 @@ const Contact = () => {
     const [form, setform] = useState({ name: '', email: '', message: '' })
     const [isLoading, setIsLoading] = useState(false)
     const [currentAnimation, setCurrentAnimation] = useState('idle')
+
+    const { alert, showAlert, hideAlert } = useAlert(0)
+
     const handleChange = (e) => {
         setform({ ...form, [e.target.name]: e.target.value })
     }
@@ -34,7 +39,10 @@ const Contact = () => {
             import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
         ).then(() => {
             setIsLoading(false)
-            // TODO: Show success message
+            showAlert({
+                show: true, text: 'Message sent successfully!', message: 'Message sent successfully',
+                type: 'success'
+            })
             // TODO: Hide an alert
 
             // Set timeout at 3s after to make animation stop 
@@ -47,7 +55,10 @@ const Contact = () => {
             setIsLoading(false)
             setCurrentAnimation('idle')
             console.log(error)
-            //TODO: Show error message
+            showAlert({
+                show: true, text: 'An error occured.. please try again later! ',
+                type: 'danger'
+            })
 
         })
     }
@@ -56,6 +67,7 @@ const Contact = () => {
 
     return (
         <section className="relative flex lg:flex-row flex-col max-container">
+            {alert.show && <Alert {...alert} />}
             <div className="flex-1 min-w-[50%] flex flex-col">
                 <h1 className="head-text">Get in touch</h1>
 
