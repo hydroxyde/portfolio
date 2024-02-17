@@ -115,7 +115,7 @@ export const experiences = [
     title: "Software Engineer",
     company_name: "Lablup",
     icon: lablup,
-    iconBg: "#accbe1",
+    iconBg: "#b7e4c7",
     date: "April 2021 - July 2023",
     points: [
       "Developing and maintaining web application using Django and React.js and other related technologies.",
@@ -141,7 +141,7 @@ export const experiences = [
     title: "Web Developer, Intern",
     company_name: "Central Cruise",
     icon: centralcruise,
-    iconBg: "#b7e4c7",
+    iconBg: "#accbe1",
     date: "Sep 2018 - Mar 2019",
     points: [
       "Maintaining and improving not only performance but general system safety of an e-commerce website selling cruises. Adding unit testing, automated backup of code and database.",
