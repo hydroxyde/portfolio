@@ -46,3 +46,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ## Install React Vertical Timeline component
 
 ❯ npm i react-vertical-timeline-component
+
+## Build application for deployment
+
+❯ npm run build
