@@ -1,6 +1,8 @@
 # Portfolio
 
-Welcome to my portfolio. You can find the installation process here, and if you have any inquiries, feel free to contact me!
+Welcome to my portfolio. You can move around the Island on Home page either by mouse drag or by left/right key press. There is a total of 4 sections: Intoduction, About, Contact, Projects. If you have any inquiries or suggestions for improvement, feel free to contact me!
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
